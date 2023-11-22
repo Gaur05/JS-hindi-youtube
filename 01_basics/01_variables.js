@@ -12,5 +12,3 @@ Prefer not to use var
 beacause of issue in block scope and functional scope 
 */
 console.table([accountID, accountEmail, accountPassword,accountCity,accountState])
-
-nasjdnjas
