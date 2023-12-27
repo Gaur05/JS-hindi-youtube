@@ -1,18 +1,17 @@
 // singleton
-// Object.create
+// Object.create // Object is known as singleton only when it is created by the constructor.
 
 // object literals
-
 const mySym = Symbol("key1")
 
-
+// Values in object are stored in key-value pair.
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Gaur",
+    "full name": "Akshat Gaur",
     [mySym]: "mykey1",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "Delhi",
+    email: "Gaur@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
@@ -22,9 +21,9 @@ const JsUser = {
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "Gaur@chatgpt.com"
+// Object.freeze(JsUser) // It is used to freeze the value of the object so that it will not change.
+JsUser.email = "Gaur@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
